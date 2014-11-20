@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WIRECARD_BXML xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
+  <W_RESPONSE>
+    <W_JOB>
+      <JobID>JN001</JobID>
+      <FNC_FT_ONLINEWIRE>
+        <FunctionID>FN001</FunctionID>
+        <FT_TRANSACTION mode="live">
+          <TransactionID>TNR45122001</TransactionID>
+          <PROCESSING_STATUS>
+            <FunctionResult>PENDING</FunctionResult>
+            <GuWID>F815887120947517965048</GuWID>
+            <ReferenceID>0800119720441</ReferenceID>
+            <TimeStamp>2008-04-29 13:19:39</TimeStamp>
+            <StatusCode>O20</StatusCode>
+            <ReasonCode>O2010</ReasonCode>
+          </PROCESSING_STATUS>
+          <REDIRECT_BANK_DATA>
+            <Url>https://www.bank.com/onlinebanking</Url>
+            <Parameters>operatorId=001&amp;merchantId=1232323&amp;txId=32132323&amp;merchantTxId=434343143</Parameters>
+          </REDIRECT_BANK_DATA>
+        </FT_TRANSACTION>
+      </FNC_FT_ONLINEWIRE>
+    </W_JOB>
+  </W_RESPONSE>
+</WIRECARD_BXML>

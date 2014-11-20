@@ -1,4 +1,9 @@
+require 'nokogiri'
+require 'typhoeus'
 require 'wirecard_giropay/version'
+require 'wirecard_giropay/request'
+require 'wirecard_giropay/response'
+require 'wirecard_giropay/gateway'
 
 module WirecardGiropay
   SANDBOX_URL = 'https://c3-test.wirecard.com/secure/ssl-gateway'

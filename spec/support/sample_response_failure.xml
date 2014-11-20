@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WIRECARD_BXML xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
+  <W_RESPONSE>
+    <W_JOB>
+      <JobID>JN001</JobID>
+      <FNC_FT_ONLINEWIRE>
+        <FunctionID>FN001</FunctionID>
+        <FT_TRANSACTION mode="live">
+          <TransactionID>TNR45122001</TransactionID>
+          <PROCESSING_STATUS>
+            <FunctionResult>NOK</FunctionResult>
+            <GuWID>F815207120947498218406</GuWID>
+            <TimeStamp>2008-04-29 13:16:22</TimeStamp>
+            <StatusCode>O30</StatusCode>
+            <ReasonCode>O3050</ReasonCode>
+            <DETAIL>
+              <ReturnCode>30353</ReturnCode>
+              <Message>Account validation failed.</Message>
+              <Advice>Please verify the account.</Advice>
+            </DETAIL>
+          </PROCESSING_STATUS>
+        </FT_TRANSACTION>
+      </FNC_FT_ONLINEWIRE>
+    </W_JOB>
+  </W_RESPONSE>
+</WIRECARD_BXML>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WIRECARD_BXML xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
+  <W_REQUEST>
+    <W_JOB>
+      <BusinessCaseSignature>9490000000ABC</BusinessCaseSignature>
+      <JobID></JobID>
+      <FNC_FT_ONLINEWIRE>
+        <FunctionID></FunctionID>
+        <FT_TRANSACTION>
+          <TransactionID>TNR45122001</TransactionID>
+          <EXTERNAL_ACCOUNT>
+            <FirstName>John F</FirstName>
+            <LastName>Doe</LastName>
+            <AccountNumber>12345678</AccountNumber>
+            <BankCode>30020900</BankCode>
+            <Country>DE</Country>
+          </EXTERNAL_ACCOUNT>
+
+          <Amount minorunits="2">500</Amount>
+          <Currency>EUR</Currency>
+          <Usage>OrderNo-FT345S71 Thank you</Usage>
+
+          <MERCHANT_DATA>
+            <SuccessRedirectUrl>https://www.merchant.com/payment?result=success</SuccessRedirectUrl>
+            <FailureRedirectUrl>https://www.merchant.com/payment?result=failure</FailureRedirectUrl>
+            <NotificationUrl>https://www.merchant.com/notification</NotificationUrl>
+            <AlternateNotificationUrl>mailto:notification@merchant.com</AlternateNotificationUrl>
+          </MERCHANT_DATA>
+          <ORDER_DATA><Parameter name="key-1">Project X</Parameter><Parameter name="key-2">Organisation Y</Parameter></ORDER_DATA>
+        </FT_TRANSACTION>
+      </FNC_FT_ONLINEWIRE>
+    </W_JOB>
+  </W_REQUEST>
+</WIRECARD_BXML>

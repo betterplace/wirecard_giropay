@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WIRECARD_BXML xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
+  <W_REQUEST>
+    <W_JOB>
+      <BusinessCaseSignature>%{business_case_signature}</BusinessCaseSignature>
+      <JobID></JobID>
+      <FNC_FT_ONLINEWIRE>
+        <FunctionID></FunctionID>
+        <FT_TRANSACTION>
+          <TransactionID>%{transaction_id}</TransactionID>
+          <EXTERNAL_ACCOUNT>
+            <FirstName>%{first_name}</FirstName>
+            <LastName>%{last_name}</LastName>
+            <AccountNumber>%{account_number}</AccountNumber>
+            <BankCode>%{bank_code}</BankCode>
+            <Country>%{country}</Country>
+          </EXTERNAL_ACCOUNT>
+
+          <Amount minorunits="2">%{amount}</Amount>
+          <Currency>%{currency}</Currency>
+          <Usage>%{usage}</Usage>
+
+          <MERCHANT_DATA>
+            <SuccessRedirectUrl>%{success_redirect_url}</SuccessRedirectUrl>
+            <FailureRedirectUrl>%{failure_redirect_url}</FailureRedirectUrl>
+            <NotificationUrl>%{notification_url}</NotificationUrl>
+            <AlternateNotificationUrl>%{alternate_notification_url}</AlternateNotificationUrl>
+          </MERCHANT_DATA>
+          %{order_data}
+        </FT_TRANSACTION>
+      </FNC_FT_ONLINEWIRE>
+    </W_JOB>
+  </W_REQUEST>
+</WIRECARD_BXML>
