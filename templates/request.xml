@@ -16,7 +16,7 @@
             <Country>%{country}</Country>
           </EXTERNAL_ACCOUNT>
 
-          <Amount minorunits="2">%{amount}</Amount>
+          <Amount minorunits="2">%{amount_in_cents}</Amount>
           <Currency>%{currency}</Currency>
           <Usage>%{usage}</Usage>
 

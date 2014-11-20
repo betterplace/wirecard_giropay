@@ -19,7 +19,7 @@ module WirecardGiropay
           account_number:             '12345678',
           bank_code:                  '30020900',
           country:                    'DE',
-          amount:                     '500',
+          amount_in_cents:            '500',
           currency:                   'EUR',
           usage:                      'OrderNo-FT345S71 Thank you',
           success_redirect_url:       'https://www.merchant.com/payment?result=success',
