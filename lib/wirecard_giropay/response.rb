@@ -9,6 +9,7 @@ module WirecardGiropay
       new xml
     end
 
+    # Implements the ActiveMerchant interface
     def params
       {
         success: success?,
@@ -19,11 +20,16 @@ module WirecardGiropay
       }
     end
 
-    private
+    # Implements the ActiveMerchant interface
+    def message
+    end
 
+    # Implements the ActiveMerchant interface
     def success?
       status_code == 'O20'
     end
+
+    private
 
     def redirect_html
       return '' unless success?
