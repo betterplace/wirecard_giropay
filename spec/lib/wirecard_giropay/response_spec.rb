@@ -13,24 +13,27 @@ module WirecardGiropay
     let(:success_response) { Response.from_xml success_xml }
     let(:failure_response) { Response.from_xml failure_xml }
 
-    describe '#success?' do
-      it('returns true with success xml')  { expect(success_response).to     be_success }
-      it('returns false with failure xml') { expect(failure_response).to_not be_success }
+    describe '#params' do
+      context 'for a success response' do
+        let(:params) { success_response.params }
+
+        it('params[:success] returns true')                 { expect(params[:success]).to eq true }
+        it('params[:redirect_html] returns the right html') { expect(params[:redirect_html]).to eq redirect_html }
+        it('params[:status_code] returns O20')              { expect(params[:status_code]).to eq 'O20' }
+        it('params[:reason_code] returns O2010')            { expect(params[:reason_code]).to eq 'O2010' }
+        it('params[:guwid] returns the correct guwid')      { expect(params[:guwid]).to eq 'F815887120947517965048' }
+      end
+
+      context 'for a failure response' do
+        let(:params) { failure_response.params }
+
+        it('params[:success] returns false')            { expect(params[:success]).to eq false }
+        it('params[:redirect_html] returns ""')         { expect(params[:redirect_html]).to eq '' }
+        it('params[:status_code] returns O30')          { expect(params[:status_code]).to eq 'O30' }
+        it('params[:reason_code] returns O3050')        { expect(params[:reason_code]).to eq 'O3050' }
+        it('params[:guwid] returns the correct guwid')  { expect(params[:guwid]).to eq 'F815207120947498218406' }
+      end
     end
 
-    describe '#redirect_html' do
-      it('returns the right html with success xml') { expect(success_response.redirect_html).to eq redirect_html }
-      it('returns the right html with failure xml') { expect(failure_response.redirect_html).to eq '' }
-    end
-
-    describe '#status_code' do
-      it('returns O20 with success xml') { expect(success_response.status_code).to eq 'O20' }
-      it('returns O30 with failure xml') { expect(failure_response.status_code).to eq 'O30' }
-    end
-
-    describe '#reason_code' do
-      it('returns O2010 with success xml') { expect(success_response.reason_code).to eq 'O2010' }
-      it('returns O3050 with failure xml') { expect(failure_response.reason_code).to eq 'O3050' }
-    end
   end
 end

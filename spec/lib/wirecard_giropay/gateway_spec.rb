@@ -43,7 +43,6 @@ module WirecardGiropay
       it 'returns a successful response' do
         response = gateway.online_wire(online_wire_params)
         expect(response).to be_a Response
-        expect(response).to be_success
       end
 
     end

@@ -9,6 +9,18 @@ module WirecardGiropay
       new xml
     end
 
+    def params
+      {
+        success: success?,
+        redirect_html: redirect_html,
+        status_code: status_code,
+        reason_code: reason_code,
+        guwid: guwid
+      }
+    end
+
+    private
+
     def success?
       status_code == 'O20'
     end
@@ -27,12 +39,14 @@ module WirecardGiropay
       xml_doc.xpath('//PROCESSING_STATUS/ReasonCode').text
     end
 
-    private
+    def guwid
+      xml_doc.xpath('//PROCESSING_STATUS/GuWID').text
+    end
 
     def replace_params
       {
-          '%{redirect_url}'    => redirect_url,
-          '%{redirect_params}' => redirect_params
+        '%{redirect_url}'    => redirect_url,
+        '%{redirect_params}' => redirect_params
       }
     end
 
