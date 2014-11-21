@@ -45,8 +45,7 @@ module WirecardGiropay
     end
 
     def transaction_mode
-      # NOTE: Do we ever want to be in demo mode?
-      'live'
+      WirecardGiropay.sandboxed? ? 'demo' : 'live'
     end
   end
 end
