@@ -16,7 +16,8 @@ module WirecardGiropay
         redirect_html: redirect_html,
         status_code: status_code,
         reason_code: reason_code,
-        guwid: guwid
+        guwid: guwid,
+        original_xml_response: @xml
       }
     end
 

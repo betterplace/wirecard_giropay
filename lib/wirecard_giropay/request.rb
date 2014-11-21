@@ -11,9 +11,9 @@ module WirecardGiropay
 
     def initialize(given_params = {})
       @given_params = given_params
-      PARAMS.each do |param|
-        raise InvalidParamsError.new("Following parameters are required '#{PARAMS}'.") unless given_params.has_key?(param)
-      end
+      missing_params = PARAMS.select { |k,v| !given_params.has_key? k }
+      raise InvalidParamsError.new("Missing parameters: #{missing_params}") if missing_params.count > 0
+
       order_data = given_params[:order_data]
       raise InvalidParamsError.new("Parameter 'order_data' must be a Hash.") if order_data and !order_data.is_a?(Hash)
     end
