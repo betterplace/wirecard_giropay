@@ -6,11 +6,9 @@ module WirecardGiropay
       File.read File.expand_path('../../../support/' + file, __FILE__)
     end
 
-    let(:success_xml)      { read_sample_file 'sample_response_success.xml' }
-    let(:failure_xml)      { read_sample_file 'sample_response_failure.xml' }
+    let(:success_xml) { read_sample_file 'sample_response_success.xml' }
+    let(:failure_xml) { read_sample_file 'sample_response_failure.xml' }
 
-    # before { WirecardGiropay.sandbox! }
-    let(:business_case_signature)  { '9490000000ABC' }
     let(:online_wire_params) do
       {
           transaction_id:             'TNR45122001',
@@ -33,7 +31,16 @@ module WirecardGiropay
           },
       }
     end
-    let(:gateway) { Gateway.new(business_case_signature) }
+
+    let(:gateway_opts) do
+      {
+        business_case_signature: '9490000000ABC',
+        username: 'foo',
+        password: 'bar'
+      }
+    end
+
+    let(:gateway) { Gateway.new(gateway_opts) }
 
     describe '#online_wire' do
       before do

@@ -1,9 +1,9 @@
 module WirecardGiropay
   class Gateway
-    def initialize(business_case_signature, username = '', password = '')
-      @business_case_signature = business_case_signature
-      @username = username
-      @password = password
+    def initialize(opts = {})
+      @business_case_signature = opts.fetch(:business_case_signature)
+      @username = opts.fetch(:username)
+      @password = opts.fetch(:password)
     end
 
     def online_wire(params)
