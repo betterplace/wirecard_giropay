@@ -29,8 +29,6 @@ module WirecardGiropay
       status_code == 'O20'
     end
 
-    private
-
     def redirect_html
       return '' unless success?
       template_html = File.read File.expand_path('../../../templates/redirect.html', __FILE__)
@@ -49,19 +47,21 @@ module WirecardGiropay
       xml_doc.xpath('//PROCESSING_STATUS/GuWID').text
     end
 
-    def replace_params
-      {
-        '%{redirect_url}'    => redirect_url,
-        '%{redirect_params}' => redirect_params
-      }
-    end
-
     def redirect_url
       xml_doc.xpath('//REDIRECT_BANK_DATA/Url').text
     end
 
     def redirect_params
       xml_doc.xpath('//REDIRECT_BANK_DATA/Parameters').text
+    end
+
+    private
+
+    def replace_params
+      {
+        '%{redirect_url}'    => redirect_url,
+        '%{redirect_params}' => redirect_params
+      }
     end
 
     def xml_doc

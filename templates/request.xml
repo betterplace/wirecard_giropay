@@ -6,7 +6,7 @@
       <JobID></JobID>
       <FNC_FT_ONLINEWIRE>
         <FunctionID></FunctionID>
-        <FT_TRANSACTION>
+        <FT_TRANSACTION mode="%{transaction_mode}">
           <TransactionID>%{transaction_id}</TransactionID>
           <EXTERNAL_ACCOUNT>
             <FirstName>%{first_name}</FirstName>
@@ -23,6 +23,7 @@
           <MERCHANT_DATA>
             <SuccessRedirectUrl>%{success_redirect_url}</SuccessRedirectUrl>
             <FailureRedirectUrl>%{failure_redirect_url}</FailureRedirectUrl>
+            <RedirectWindowName>%{redirect_window_name}</RedirectWindowName>
             <NotificationUrl>%{notification_url}</NotificationUrl>
             <AlternateNotificationUrl>%{alternate_notification_url}</AlternateNotificationUrl>
           </MERCHANT_DATA>

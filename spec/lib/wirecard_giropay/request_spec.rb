@@ -11,7 +11,7 @@ module WirecardGiropay
     describe '#to_xml' do
       it 'gives the right xml' do
         params = {
-            business_case_signature:    '9490000000ABC',
+            business_case_signature:    '0000003162752CAC',
             transaction_id:             'TNR45122001',
             first_name:                 'John F',
             last_name:                  'Doe',
@@ -23,6 +23,7 @@ module WirecardGiropay
             usage:                      'OrderNo-FT345S71 Thank you',
             success_redirect_url:       'https://www.merchant.com/payment?result=success',
             failure_redirect_url:       'https://www.merchant.com/payment?result=failure',
+            redirect_window_name:       'Payment Result',
             notification_url:           'https://www.merchant.com/notification',
             alternate_notification_url: 'mailto:notification@merchant.com',
             order_data:                 {

@@ -2,11 +2,11 @@
 <WIRECARD_BXML xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
   <W_REQUEST>
     <W_JOB>
-      <BusinessCaseSignature>9490000000ABC</BusinessCaseSignature>
+      <BusinessCaseSignature>0000003162752CAC</BusinessCaseSignature>
       <JobID></JobID>
       <FNC_FT_ONLINEWIRE>
         <FunctionID></FunctionID>
-        <FT_TRANSACTION>
+        <FT_TRANSACTION mode="live">
           <TransactionID>TNR45122001</TransactionID>
           <EXTERNAL_ACCOUNT>
             <FirstName>John F</FirstName>
@@ -23,6 +23,7 @@
           <MERCHANT_DATA>
             <SuccessRedirectUrl>https://www.merchant.com/payment?result=success</SuccessRedirectUrl>
             <FailureRedirectUrl>https://www.merchant.com/payment?result=failure</FailureRedirectUrl>
+            <RedirectWindowName>Payment Result</RedirectWindowName>
             <NotificationUrl>https://www.merchant.com/notification</NotificationUrl>
             <AlternateNotificationUrl>mailto:notification@merchant.com</AlternateNotificationUrl>
           </MERCHANT_DATA>

@@ -20,4 +20,8 @@ module WirecardGiropay
   def self.gateway_url
     sandboxed? ? SANDBOX_URL : LIVE_URL
   end
+
+  def self.sandbox_credentials
+    '00000031556BEEC6:TestXAPTER'
+  end
 end

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Notification>
+  <BusinessCaseSignature>9490000000ABC</BusinessCaseSignature>
+  <ReferenceJobID      >JN7d31b875-1e9d-4383-a4c6-f4645d7b32b8</ReferenceJobID>
+  <ReferenceFunctionID >FN7d31b875-1e9d-4383-a4c6-f4645d7b32b8</ReferenceFunctionID>
+  <ReferenceTransactionID>7d31b875-1e9d-4383-a4c6-f4645d7b32b8</ReferenceTransactionID>
+  <ReferenceNotificationUrl>https://www.merchant.com/notification</ReferenceNotificationUrl>
+  <ReferenceAlternateNotificationUrl>mailto:notification@merchant.com</ReferenceAlternateNotificationUrl>
+  <ReferenceDescriptor>JLUH0BFSBS FT345S71</ReferenceDescriptor>
+  <Amount>1500</Amount>
+  <Currency>EUR</Currency>
+  <ConfirmationTimeStamp>2009-04-23T18:04:14.187+02:00</ConfirmationTimeStamp>
+  <ReferenceStatusCode>O10</ReferenceStatusCode>
+  <ReferenceStatusMessage>SUCCESS</ReferenceStatusMessage>
+  <ReferenceReasonCode>O1010</ReferenceReasonCode>
+  <ReferenceReasonMessage>Transaction completed successfully.</ReferenceReasonMessage>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <Reference URI="">
+        <Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#envelope-signature" /></Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>Ad9M2sOBmZVFq7hG5LByiergA2E=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+      TrP+dM0KmDaduQjcfsHnnfnBWkPC1fEqWGVQB/67zogormdhpMfyedTRkW76bEtJpa06
+      jlQp/aE96MxTlWkDnaX02Ffly34mRBE30GOeJFnoWQH/u+XWDgO44AlK+R6jwjIv+CzF
+      8fLYNhuAtUSr6oIePB7KlinxNGJlho83h4klauln4keIApWnXIJ/pzvYttFqkDBrfMsq
+      KM2b5kblW77VVKUT1e/qkGe/8NUT96DcJnPgAXwCxDEQZhEe3+HkFmAq8Q/hfRYnjLV2
+      /6VYcGv4I0KQgf/EW5Ebcrz2lI33CHJGB4Ysae/mS3TCsyBkeBIojAqA/Qp6pfSjNcir
+      EQ==
+    </SignatureValue>
+    <KeyInfo>
+      <X509Data>
+        <X509SubjectName>CN=sign-test.wirecard.com, OU=IT, O=Wirecard AG, L=Grasbrunn, ST=Bavaria, C=DE</X509SubjectName>
+        <X509Certificate>
+          MIIEtzCCBCCgAwIBAgIQEd3bxwQDSylc+wWNRyWRfzANBgkqhkiG9w0BAQUFAD
+          CBujEfMB0GA1UEChMWVmVyaVNpZ24gVHJ1c3QgTmV0d29yazEXMBUGA1UECxMO
+          VmVyaVNpZ24sIEluYy4xMzAxBgNVBAsTKlZlcmlTaWduIEludGVybmF0aW9uYW
+          wgU2VydmVyIENBIC0gQ2xhc3MgMzFJMEcGA1UECxNAd3d3LnZlcmlzaWduLmNv
+          bS9DUFMgSW5jb3JwLmJ5IFJlZi4gTElBQklMSVRZIExURC4oYyk5NyBWZXJpU2
+          lnbjAeFw0wOTAzMzEwMDAwMDBaFw0xMTAzMzEyMzU5NTlaMHcxCzAJBgNVBAYT
+          AkRFMRAwDgYDVQQIEwdCYXZhcmlhMRIwEAYDVQQHFAlHcmFzYnJ1bm4xFDASBg
+          NVBAoUC1dpcmVjYXJkIEFHMQswCQYDVQQLFAJJVDEfMB0GA1UEAxQWc2lnbi10
+          ZXN0LndpcmVjYXJkLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCgg
+          EBAKivwjliJv9ZJdUyI0M4SNcM+4dQa6szGGonml8fJP9oEHYAFw2sU7JDpoHw
+          rdiPxzgWXGBkZ8Pq/Nsdr6hesWTm+ORNG2Tq0Na/6y3vIQaXqFWSMHKSpNu+cv
+          XJh9N0Qg8QvKVcNJDLrqK83RE0CHrJJy6+7wlKujuHnGtjxz4UjcBxk4IYYUm6
+          L+hOsVP9rAzLz3MBv74B4NBa+iJ9EdYzpu0qA28kyikUnvU4gEZZDYCE0YTwkO
+          gtwCOols6PAISb2VleE80VJd6Fr5ZY5DN7oMXsdCz/tuhPhS9h7M3tqqiBazvj
+          NLoJm0gNvXzZjk+SA3XNrpa7Bt/KymDX/58CAwEAAaOCAXowggF2MAkGA1UdEw
+          QCMAAwCwYDVR0PBAQDAgWgMEYGA1UdHwQ/MD0wO6A5oDeGNWh0dHA6Ly9jcmwu
+          dmVyaXNpZ24uY29tL0NsYXNzM0ludGVybmF0aW9uYWxTZXJ2ZXIuY3JsMEQGA1
+          UdIAQ9MDswOQYLYIZIAYb4RQEHFwMwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93
+          d3cudmVyaXNpZ24uY29tL3JwYTAoBgNVHSUEITAfBglghkgBhvhCBAEGCCsGAQ
+          UFBwMBBggrBgEFBQcDAjA0BggrBgEFBQcBAQQoMCYwJAYIKwYBBQUHMAGGGGh0
+          dHA6Ly9vY3NwLnZlcmlzaWduLmNvbTBuBggrBgEFBQcBDARiMGChXqBcMFowWD
+          BWFglpbWFnZS9naWYwITAfMAcGBSsOAwIaBBRLa7kolgYMu9BSOJsprEsHiyEF
+          GDAmFiRodHRwOi8vbG9nby52ZXJpc2lnbi5jb20vdnNsb2dvMS5naWYwDQYJKo
+          ZIhvcNAQEFBQADgYEAaKgUBvSJ3tSJkbLt25yd/kRvp3okcr5fzrbm7b0rYC34
+          3KAs91QVaKD4MbqrLgxXfbnouEUULmgLt4CLTFRs9rWr/99ZekEjMxHeVIWeAs
+          8Vd6hTOuIUsZzPO+/D5QM2dLumNoFDkrxb/zqW8Nt+ibPWJAb+1IHD27EiiFpb
+          E50=
+        </X509Certificate>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</Notification>

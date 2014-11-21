@@ -24,6 +24,7 @@ module WirecardGiropay
           usage:                      'OrderNo-FT345S71 Thank you',
           success_redirect_url:       'https://www.merchant.com/payment?result=success',
           failure_redirect_url:       'https://www.merchant.com/payment?result=failure',
+          redirect_window_name:       'Payment Result',
           notification_url:           'https://www.merchant.com/notification',
           alternate_notification_url: 'mailto:notification@merchant.com',
           order_data:                 {

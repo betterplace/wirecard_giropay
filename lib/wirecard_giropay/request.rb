@@ -5,8 +5,8 @@ module WirecardGiropay
     class InvalidParamsError < StandardError; end
 
     PARAMS = %i(business_case_signature transaction_id first_name last_name account_number bank_code
-                country amount_in_cents currency usage success_redirect_url failure_redirect_url notification_url
-                alternate_notification_url order_data
+                country amount_in_cents currency usage success_redirect_url failure_redirect_url redirect_window_name
+                notification_url alternate_notification_url order_data
                )
 
     def initialize(given_params = {})
@@ -33,6 +33,7 @@ module WirecardGiropay
       rep_params = {}
       @given_params.each { |key, value| rep_params["%{#{key}}"] = value }
       rep_params['%{order_data}'] = order_data_xml
+      rep_params['%{transaction_mode}'] = transaction_mode
       rep_params
     end
 
@@ -43,5 +44,8 @@ module WirecardGiropay
       orders << '</ORDER_DATA>'
     end
 
+    def transaction_mode
+      WirecardGiropay.sandboxed? ? 'demo' : 'live'
+    end
   end
 end
