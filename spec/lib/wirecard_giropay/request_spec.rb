@@ -13,6 +13,7 @@ module WirecardGiropay
         params = {
             business_case_signature:    '0000003162752CAC',
             transaction_id:             'TNR45122001',
+            transaction_mode:           'live',
             first_name:                 'John F',
             last_name:                  'Doe',
             account_number:             '12345678',
