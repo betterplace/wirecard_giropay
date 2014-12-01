@@ -6,7 +6,7 @@
       <JobID></JobID>
       <FNC_FT_ONLINEWIRE>
         <FunctionID></FunctionID>
-        <FT_TRANSACTION mode="%{transaction_mode}">
+        <FT_TRANSACTION mode="live">
           <TransactionID>%{transaction_id}</TransactionID>
           <EXTERNAL_ACCOUNT>
             <FirstName>%{first_name}</FirstName>

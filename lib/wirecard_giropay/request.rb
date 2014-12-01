@@ -33,7 +33,6 @@ module WirecardGiropay
       rep_params = {}
       @given_params.each { |key, value| rep_params["%{#{key}}"] = value }
       rep_params['%{order_data}'] = order_data_xml
-      rep_params['%{transaction_mode}'] = transaction_mode
       rep_params
     end
 
@@ -42,10 +41,6 @@ module WirecardGiropay
       orders = '<ORDER_DATA>'
       @given_params[:order_data].each { |key, parameter| orders << "<Parameter name=\"#{key}\">#{parameter}</Parameter>" }
       orders << '</ORDER_DATA>'
-    end
-
-    def transaction_mode
-      WirecardGiropay.sandboxed? ? 'demo' : 'live'
     end
   end
 end
