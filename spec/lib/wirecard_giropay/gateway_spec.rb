@@ -11,6 +11,7 @@ module WirecardGiropay
 
     let(:online_wire_params) do
       {
+          transaction_mode:           'live',
           transaction_id:             'TNR45122001',
           first_name:                 'John F',
           last_name:                  'Doe',
