@@ -4,10 +4,12 @@ module WirecardGiropay
 
     class InvalidParamsError < StandardError; end
 
-    PARAMS = %i(business_case_signature transaction_id first_name last_name account_number bank_code
-                country amount_in_cents currency usage success_redirect_url failure_redirect_url redirect_window_name
-                notification_url alternate_notification_url order_data
-               )
+    PARAMS = %i(
+      business_case_signature transaction_mode transaction_id first_name
+      last_name account_number bank_code country amount_in_cents currency usage
+      success_redirect_url failure_redirect_url redirect_window_name
+      notification_url alternate_notification_url order_data
+    )
 
     def initialize(given_params = {})
       @given_params = given_params
