@@ -3,6 +3,7 @@ require 'typhoeus'
 require 'wirecard_giropay/version'
 require 'wirecard_giropay/request'
 require 'wirecard_giropay/response'
+require 'wirecard_giropay/notification_response'
 require 'wirecard_giropay/gateway'
 require 'wirecard_giropay/testing'
 

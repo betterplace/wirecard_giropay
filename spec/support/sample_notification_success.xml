@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Notification>
   <BusinessCaseSignature>9490000000ABC</BusinessCaseSignature>
-  <ReferenceJobID      >JN7d31b875-1e9d-4383-a4c6-f4645d7b32b8</ReferenceJobID>
-  <ReferenceFunctionID >FN7d31b875-1e9d-4383-a4c6-f4645d7b32b8</ReferenceFunctionID>
+  <ReferenceJobID>JN7d31b875-1e9d-4383-a4c6-f4645d7b32b8</ReferenceJobID>
+  <ReferenceFunctionID>FN7d31b875-1e9d-4383-a4c6-f4645d7b32b8</ReferenceFunctionID>
   <ReferenceTransactionID>7d31b875-1e9d-4383-a4c6-f4645d7b32b8</ReferenceTransactionID>
   <ReferenceNotificationUrl>https://www.merchant.com/notification</ReferenceNotificationUrl>
   <ReferenceAlternateNotificationUrl>mailto:notification@merchant.com</ReferenceAlternateNotificationUrl>

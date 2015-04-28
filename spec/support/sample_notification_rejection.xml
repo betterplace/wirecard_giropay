@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Notification>
+   <BusinessCaseSignature>000000316D073C58</BusinessCaseSignature>
+   <ReferenceJobID />
+   <ReferenceFunctionID />
+   <ReferenceTransactionID>720109</ReferenceTransactionID>
+   <ReferenceNotificationUrl>https://www.betterplace.org/de/wirecard_giropay/720109/notification</ReferenceNotificationUrl>
+   <ReferenceAlternateNotificationUrl>mailto:developers@betterplace.org</ReferenceAlternateNotificationUrl>
+   <ReferenceDescriptor>2A0HC00PXU Spende via betterplace.org Skateistan Afghanistan</ReferenceDescriptor>
+   <Amount>2300</Amount>
+   <Currency>EUR</Currency>
+   <ConfirmationTimeStamp>2015-04-27T11:52:12.154+02:00</ConfirmationTimeStamp>
+   <ReferenceStatusCode>O30</ReferenceStatusCode>
+   <ReferenceStatusMessage>REJECTED</ReferenceStatusMessage>
+   <ReferenceReasonCode>O3080</ReferenceReasonCode>
+   <ReferenceReasonMessage>Cancelled by account holder.</ReferenceReasonMessage>
+   <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+         <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+         <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+         <Reference URI="">
+            <Transforms>
+               <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>uFfGXZIRCpijPOwfmf+aDwKcjfY=</DigestValue>
+         </Reference>
+      </SignedInfo>
+      <SignatureValue>PI6QDZO66sfihQ0QCWaWRymUh2c7XCQ9cnuHsFYfolhEpdEow9GoJ/Q/iDBxJG0LfaH5gY0rlWRJ
+v7n/UTyN6fpNdOVGLlHdluYEC7JJGd8XcJSjNY29E2DR7IgJ2EtwzMv0shloESUPYqskXrCHmIn7
+tqn6PrkQqIUKd1JqIX72Mm2zw4+t5H1Twosp0IAi2aQ5hz0GjJkSq72KLDdSnum4LH3+d4J55A9g
+XieDHI4ut/Gv6zftqJpRCOe/rAGeTNMTDGslpn74XofhDkRK8VCd6OXnxXpDmCjQr5IUOmmIDbVz
+ifafAcy2lK+xrvBfo48d1qMVDSrm2ATil9vI+A==</SignatureValue>
+      <KeyInfo>
+         <X509Data>
+            <X509SubjectName>CN=sign.wirecard.com, OU=IT, O=Wirecard AG, L=Grasbrunn, ST=Bavaria, C=DE</X509SubjectName>
+            <X509Certificate>MIIEsjCCBBugAwIBAgIQWvgqwPeheleU/MmlO31IPTANBgkqhkiG9w0BAQUFADCBujEfMB0GA1UE
+ChMWVmVyaVNpZ24gVHJ1c3QgTmV0d29yazEXMBUGA1UECxMOVmVyaVNpZ24sIEluYy4xMzAxBgNV
+BAsTKlZlcmlTaWduIEludGVybmF0aW9uYWwgU2VydmVyIENBIC0gQ2xhc3MgMzFJMEcGA1UECxNA
+d3d3LnZlcmlzaWduLmNvbS9DUFMgSW5jb3JwLmJ5IFJlZi4gTElBQklMSVRZIExURC4oYyk5NyBW
+ZXJpU2lnbjAeFw0wOTAzMzEwMDAwMDBaFw0xMTAzMzEyMzU5NTlaMHIxCzAJBgNVBAYTAkRFMRAw
+DgYDVQQIEwdCYXZhcmlhMRIwEAYDVQQHFAlHcmFzYnJ1bm4xFDASBgNVBAoUC1dpcmVjYXJkIEFH
+MQswCQYDVQQLFAJJVDEaMBgGA1UEAxQRc2lnbi53aXJlY2FyZC5jb20wggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQDBFZJr2limXRIWmK515WXCSBnFnb4mkwGag5i3xXfoI5L7hbCFwk6o
+Hdzb8r3+LnYXcpcCgs7A0PFyJiEM7DSu57KPSN64HjBgSisxZALNGedjwo8yQpxFOgsAUgaZTSzj
+meyTVpaBmKoDiGykwJTJCvzhmX8SqjgU/tu5yu5K4lXV98L3k2QLnsnIWFDHD44hQtae/spX/kmk
+aE+aJF+Jjefz1LYmJ9Uc9DVXSruUPyo2rloNvfqqEvxyoAjl/My+AWoA99AH8itjl9VF99XzXZnD
+UT4axBWcTA5lGrwlsk1GXpAlA8fqK9aqqFC25+pfLOr2nE4/wuxITfDphNXlAgMBAAGjggF6MIIB
+djAJBgNVHRMEAjAAMAsGA1UdDwQEAwIFoDBGBgNVHR8EPzA9MDugOaA3hjVodHRwOi8vY3JsLnZl
+cmlzaWduLmNvbS9DbGFzczNJbnRlcm5hdGlvbmFsU2VydmVyLmNybDBEBgNVHSAEPTA7MDkGC2CG
+SAGG+EUBBxcDMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3LnZlcmlzaWduLmNvbS9ycGEwKAYD
+VR0lBCEwHwYJYIZIAYb4QgQBBggrBgEFBQcDAQYIKwYBBQUHAwIwNAYIKwYBBQUHAQEEKDAmMCQG
+CCsGAQUFBzABhhhodHRwOi8vb2NzcC52ZXJpc2lnbi5jb20wbgYIKwYBBQUHAQwEYjBgoV6gXDBa
+MFgwVhYJaW1hZ2UvZ2lmMCEwHzAHBgUrDgMCGgQUS2u5KJYGDLvQUjibKaxLB4shBRgwJhYkaHR0
+cDovL2xvZ28udmVyaXNpZ24uY29tL3ZzbG9nbzEuZ2lmMA0GCSqGSIb3DQEBBQUAA4GBABMDpSYR
+eTqDJaq2DGACPAzsUDR6cFqU11JsOzDABpAlvqeHcHaVVGPax44u5cCm2SZQ2z5NRx/R1PqjHBSH
+7F5/QnuWvTRCGEtX05HM3weuol+Aa5v7qJSeqqMUzqgEV/QwKZA2DqWGdMELsc8p1Qb3hdBEEjuI
+5Ang/QP1deXt</X509Certificate>
+         </X509Data>
+      </KeyInfo>
+   </Signature>
+</Notification>
