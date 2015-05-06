@@ -1,4 +1,6 @@
 # Wirecard Giropay
+[![Build Status](https://api.travis-ci.org/betterplace/wirecard_giropay.svg?branch=master)](http://travis-ci.org/betterplace/wirecard_giropay)
+[![Code Climate](https://codeclimate.com/github/betterplace/wirecard_giropay/badges/gpa.svg)](https://codeclimate.com/github/betterplace/wirecard_giropay)
 
 An implementation of the wirecard giropay interface for giropay payments.
 
